@@ -41,7 +41,7 @@ case $opcao in
    echo "Digite o outro:"
    read num2
    multiplicacao=$(bc <<< "scale=2; $num1 * $num2")
-   echo " O resultado da subtração é:" $multiplicacao
+   echo " O resultado da multiplicação é:" $multiplicacao
    ;;
 4)
    echo "Digite o número:"
@@ -49,7 +49,7 @@ case $opcao in
    echo "Digite o outro:"
    read num2
    divisao=$(bc <<< "scale=2; $num1 / $num2" )
-   echo " O resultado da subtração é:" $divisao
+   echo " O resultado da divisão é:" $divisao
    ;;
 5) 
    echo "Digite o número:"
@@ -62,8 +62,8 @@ case $opcao in
    read num1
    echo "Digite o outro:"
    read num2
-   subtracao=$( "scale=2; $num1 ^ $num2")
-   echo " O resultado da subtração é:" $subtracao
+   potencia=$(bc <<< "scale=2; $num1 ^ $num2")
+   echo " O resultado da potência é:" $potencia
    ;;
    7)
       echo "Saindo da calculadora."
